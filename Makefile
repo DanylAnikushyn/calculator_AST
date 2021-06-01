@@ -34,6 +34,6 @@ libio:
 	$(CXX) -fpic -shared -o libio.so src/io.cpp
 
 clean:
-	rm $(TARGET) $(objects) 
+	rm $(TARGET) $(objects) io.o libio.so
 
 .PHONY: all clean
