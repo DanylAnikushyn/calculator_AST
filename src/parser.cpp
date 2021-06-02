@@ -50,7 +50,7 @@ AST* Parser::parse_int()
     int int_value = std::stoi(token->value);
     eat(TOKEN_INT);
     AST* ast = new AST(AST_INT);
-    ast->op = TOKEN_INT; // ?????????
+    ast->op = TOKEN_INT; 
     ast->int_value = int_value;
     return ast;
 }
